@@ -3,70 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="UBC CPSC 532Z: Physics-Informed AI — 2026 course website." />
-    <title>CPSC 532Z · Physics-Informed AI</title>
+    <meta name="description" content="UBC CPSC 532Z Physics-Informed AI course website for 2026." />
+    <title>CPSC 532Z</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+    <script src="site.js" defer></script>
   </head>
   <body>
     <header class="site-header">
-      <nav class="nav container" aria-label="Main navigation">
-        <a class="brand" href="#top">CPSC 532Z</a>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="schedule.html">Schedule</a>
-          <a href="syllabus.html">Syllabus</a>
-        </div>
+      <a class="site-name" href="index.html">CPSC 532Z</a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a class="active" aria-current="page" href="index.html">Home</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="syllabus.html">Syllabus</a>
+        <button class="icon-button search-toggle" type="button" aria-label="Search this site" title="Search this site">
+          <i data-lucide="search"></i>
+        </button>
       </nav>
+      <button class="icon-button menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+      <form class="site-search" role="search" hidden>
+        <input name="query" type="search" aria-label="Search this site" placeholder="Search this site" />
+        <button class="icon-button" type="submit" aria-label="Search"><i data-lucide="search"></i></button>
+      </form>
     </header>
 
-    <main id="top">
-      <section class="hero container">
-        <p class="eyebrow">University of British Columbia · 2026 · TBD</p>
-        <h1>Physics-Informed<br /><em>Artificial Intelligence</em></h1>
-        <p class="intro">Transforming Science 🧬, Engineering ⚙️, and Art 🎨</p>
-        <div class="hero-actions">
-          <a class="button primary" href="schedule.html">View schedule <span>↗</span></a>
-          <a class="button secondary" href="syllabus.html">Read syllabus</a>
-        </div>
-        <div class="hero-note"><span class="dot"></span> Website for the 2026 offering · content is being updated</div>
-      </section>
+    <aside class="mobile-nav" hidden>
+      <a class="active" aria-current="page" href="index.html">Home</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="syllabus.html">Syllabus</a>
+    </aside>
 
-      <section id="about" class="section container split">
-        <div>
-          <p class="eyebrow">01 · About the course</p>
-          <h2>Where scientific insight meets modern AI.</h2>
-        </div>
-        <div class="copy">
-          <p>CPSC 532Z explores methods for incorporating physical laws and scientific priors into machine-learning systems. We will connect theory with hands-on experiments across scientific machine learning, differential equations, and simulation.</p>
-          <p class="muted">Instructor: <strong>Peter Yichen Chen</strong> · peter.chen@ubc.ca<br>TA: Weijia Zeng (owenzeng@student.ubc.ca)<br>Class time: MW 15:30–17:00 · Classroom: CEME 1212<br>Communication: Please join the Slack group for questions and teammates.<br>Pre-class survey: TBD</p>
+    <main>
+      <section class="hero hero-home">
+        <div class="hero-home-content">
+          <h1>CPSC532Z</h1>
+          <div class="title-rule"></div>
+          <p class="course-title">Physics-Informed-AI</p>
+          <p class="tagline">Transforming Science 🧬, Engineering ⚙️, and Art 🎨</p>
         </div>
       </section>
 
-      <section id="schedule" class="section schedule-section">
-        <div class="container">
-          <p class="eyebrow">02 · At a glance</p>
-          <div class="schedule-grid">
-            <article class="card accent"><span class="card-number">01</span><h3>Foundations</h3><p>Physics-informed modeling, inductive biases, and the scientific ML landscape.</p></article>
-            <article class="card"><span class="card-number">02</span><h3>Methods</h3><p>PINNs, neural operators, differentiable simulation, and hybrid systems.</p></article>
-            <article class="card"><span class="card-number">03</span><h3>Applications</h3><p>Projects that apply course ideas to real physical and engineering problems.</p></article>
+      <section class="yellow-page">
+        <div class="content home-content">
+          <div class="course-facts">
+            <p><strong>Course Year:</strong> 2026</p>
+            <p><strong>Instructor:</strong> <a href="https://peterchencyc.com/" target="_blank" rel="noreferrer">Peter Yichen Chen</a> <em>(peter.chen@ubc.ca)</em></p>
+            <p><strong>TA:</strong> Siyuan Chen <em>(email: TBD)</em></p>
+            <p><strong>Class Time:</strong> TBD</p>
+            <p><strong>Meeting times:</strong> TBD</p>
+            <p><strong>Classroom location:</strong> TBD</p>
+            <p><strong>Communication:</strong> Slack group: TBD. Joining the course Slack will be required for questions, finding teammates, and submitting presentation slides.</p>
+            <p><strong>Pre-class survey:</strong> TBD</p>
           </div>
-          <p class="schedule-note">Detailed weekly schedule and room information will be posted here as the 2026 course plan is finalized.</p>
-        </div>
-      </section>
 
-      <section id="resources" class="section container resources">
-        <div>
-          <p class="eyebrow">03 · Resources</p>
-          <h2>Everything in one place.</h2>
-        </div>
-        <div class="resource-list">
-          <a href="syllabus.html" class="resource"><span>Syllabus</span><span>↗</span></a>
-          <a href="schedule.html" class="resource"><span>Course schedule</span><span>↗</span></a>
-          <a href="syllabus.html" class="resource"><span>Assignments &amp; projects · TBD</span><span>↗</span></a>
+          <section>
+            <h2>Class Overview</h2>
+            <p>This course explores the integration of modern machine learning techniques with physics-based modeling and simulation. Structured around foundational principles and emerging research, we will examine differentiable simulations, physics-informed learning, reduced-order modeling, and generative AI methods for physical systems. Topics span from graph neural networks and neural operators to diffusion models and AI-driven scientific discovery. Students will engage with key readings and hands-on projects, culminating in the creation of a differentiable simulator for a chosen application. Case studies include 3D content creation, engineering design/control, and scientific material discovery.</p>
+          </section>
+
+          <section>
+            <h2>Seminar Structure</h2>
+            <p>Unlike traditional lecture-style courses, this research seminar uses a role-playing format to immerse students in the research lifecycle. Each week, we’ll read a technical paper on learning and simulation. During role-play, students will rotate through various positions. Throughout the semester, each student should sign up for roughly 10 presentations.</p>
+          </section>
+
+          <section>
+            <h2>Role-playing (Heavily borrowed from <a href="https://www.cs.columbia.edu/~cxz/teaching/E6998_f16/" target="_blank" rel="noreferrer">Columbia’s E6998</a>)</h2>
+            <p>Every week, we will focus on one/two papers and organize the discussion around different “roles” played by students: <strong>paper reviewer</strong>, <strong>archaeologist</strong>, <strong>industry expert</strong>, and <strong>hacker</strong>. All role players should make some slides and turn them in on Slack.</p>
+
+            <p><strong>Paper reviewer.</strong> Complete a full, critical, but constructive (not negative) review of the paper. Answer all questions of the <a href="https://neurips.cc/Conferences/2026/ReviewerGuidelines" target="_blank" rel="noreferrer">NeurIPS Review Form</a>.</p>
+            <ul>
+              <li><strong># of roles:</strong> 3.</li>
+              <li><strong>In class:</strong> report your reviews to the rest of us in 20 min (total).</li>
+            </ul>
+
+            <p><strong>Archaeologist.</strong> A research paper should not be reviewed as a piece of isolated scientific work. Investigate where the paper sites in the context of previous and subsequent work. Find and report one older paper cited by the discussed paper, and tell us why this discussed paper advances the technique. Meanwhile, find a subsequent paper (newer than the discussed one) and report why it merits a publication. Chaining the series of papers will help to reveal a chronological flow of technical advancement.</p>
+            <ul>
+              <li><strong># of roles:</strong> 1.</li>
+              <li><strong>In class:</strong> report your finding with your slides in 15 min (total).</li>
+            </ul>
+
+            <p><strong>Industrial R&amp;D expert.</strong> Convince us (your industry bosses) that the paper can bring technical strength to the company. So it worth the company's resource to integrate the technique into our commerical products or pipeline. You can choose an appropriate company and product or application (e.g., software company like Audodesk or animation studio like Pixar).</p>
+            <ul>
+              <li><strong># of roles:</strong> 1.</li>
+              <li><strong>In class:</strong> present your argument with your slides in 15 min (total).</li>
+            </ul>
+
+            <p><strong>Hacker.</strong> Implement a small part of the paper or simplified (e.g. 2D instead of 3D) version of the paper. If the paper introduces a new system (e.g. Taichi), then you can also design some cool demo with it. Prepare a demo of your work for the class.</p>
+            <ul>
+              <li><strong># of roles:</strong> 2.</li>
+              <li><strong>In class:</strong> present your demo/slides in 25 min (total).</li>
+            </ul>
+
+            <p class="reference-note">This format follows the role-playing seminar model proposed by Jacobson and Raffel: <a href="https://colinraffel.com/blog/role-playing-seminar.html" target="_blank" rel="noreferrer">https://colinraffel.com/blog/role-playing-seminar.html</a>, and is inspired by similar courses such as Columbia’s E6998 (<a href="https://www.cs.columbia.edu/~cxz/teaching/E6998_f16/" target="_blank" rel="noreferrer">https://www.cs.columbia.edu/~cxz/teaching/E6998_f16/</a>), USC’s CSCI-699 (<a href="https://odedstein.com/teaching/hs-2023-csci-699/index.html" target="_blank" rel="noreferrer">https://odedstein.com/teaching/hs-2023-csci-699/index.html</a>), and UC Berkeley’s CS294-173 (<a href="https://sites.google.com/berkeley.edu/learningfor3d-seminar/schedule?authuser=0" target="_blank" rel="noreferrer">https://sites.google.com/berkeley.edu/learningfor3d-seminar/schedule?authuser=0</a>).</p>
+          </section>
+
+          <section>
+            <h2>Prerequisites/Corequisites</h2>
+            <p>Advanced undergraduate and beginning graduate students in computer science and applied sciences.</p>
+          </section>
+
+          <section>
+            <h2>Course Goal</h2>
+            <ul>
+              <li>Develop differentiable simulations by integrating physical principles with data-driven methods using modern differentiable programming frameworks.</li>
+              <li>Critically compare modeling approaches along the spectrum from physics-based to purely data-driven, understanding their trade-offs in accuracy, generalization, and interpretability.</li>
+              <li>Apply deep learning techniques—including graph neural networks, neural operators, and transformers—to problems in physics, engineering, and scientific computing.</li>
+              <li>Evaluate and select computational tools based on criteria such as simulation speed, scalability, and fidelity to physical phenomena.</li>
+              <li>Design and manage open-ended research projects, from proposal to presentation, while demonstrating collaboration, planning, and iteration.</li>
+              <li>Communicate complex technical ideas through oral presentations, written reports, and reproducible experiments.</li>
+            </ul>
+          </section>
         </div>
       </section>
     </main>
 
-    <footer class="footer container"><span>© 2026 UBC · CPSC 532Z</span><span>Built for the physics-informed AI community.</span></footer>
+    <button class="site-info" type="button" title="Site information" aria-label="Site information"><i data-lucide="info"></i></button>
   </body>
 </html>
