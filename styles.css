@@ -227,8 +227,8 @@ a {
   margin: 0;
 }
 
-.course-facts p:nth-child(2),
-.course-facts p:nth-child(3) {
+.course-facts p:nth-child(3),
+.course-facts p:nth-child(4) {
   margin-bottom: 10px;
 }
 
@@ -375,6 +375,10 @@ a {
 .syllabus-document h3 {
   margin: 0 0 5px;
   font-size: 17px;
+}
+
+.syllabus-document .subheading {
+  margin-top: 22px;
 }
 
 .syllabus-document p,
