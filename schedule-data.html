@@ -6,14 +6,15 @@
     <title>2026 CPSC 532Z Course Schedule</title>
     <style>
       * { box-sizing: border-box; }
-      html, body { min-width: 920px; margin: 0; color: #202124; background: #fff; font: 13px Arial, sans-serif; }
+      html, body { min-width: 1240px; margin: 0; color: #202124; background: #fff; font: 13px Arial, sans-serif; }
       .sheet-name { height: 31px; display: flex; align-items: center; padding: 0 8px; border-bottom: 1px solid #d0d0d0; font-size: 16px; }
       table { width: 100%; border-collapse: collapse; table-layout: fixed; }
       th, td { min-height: 28px; padding: 6px 8px; border: 1px solid #dadce0; vertical-align: top; text-align: left; }
       th { background: #f1f3f4; font-weight: 600; }
       th:nth-child(1) { width: 145px; }
-      th:nth-child(2) { width: 82px; }
-      th:nth-child(3) { width: 240px; }
+      th:nth-child(2) { width: 125px; }
+      th:nth-child(3) { width: 235px; }
+      th:nth-child(4), th:nth-child(5) { width: 365px; }
       .unit { font-weight: 600; }
       .tbd { color: #5f6368; }
       .tabs { position: fixed; right: 0; bottom: 0; left: 0; height: 28px; display: flex; align-items: end; gap: 2px; padding-left: 7px; border-top: 1px solid #dadce0; background: #f1f3f4; }
@@ -27,23 +28,26 @@
       <thead>
         <tr>
           <th>Course unit</th>
-          <th>Week</th>
+          <th>Week / date</th>
           <th>Topics / activities</th>
-          <th>Reading</th>
-          <th>Reviewer</th>
-          <th>Archaeologist</th>
-          <th>Industry expert</th>
-          <th>Hacker</th>
+          <th>Reading 1</th>
+          <th>Reading 2 / milestone</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td class="unit">I The fundamentals</td><td>Week 1</td><td>Introduction and explanation of formats</td><td class="tbd">TBD</td><td class="tbd">TBD</td><td class="tbd">TBD</td><td class="tbd">TBD</td><td class="tbd">TBD</td></tr>
-        <tr><td></td><td>Week 2</td><td>Differentiable simulations</td><td class="tbd">TBD</td><td class="tbd">TBD</td><td class="tbd">TBD</td><td class="tbd">TBD</td><td class="tbd">TBD</td></tr>
-        <tr><td></td><td>Week 3</td><td>Project proposal</td><td class="tbd">TBD</td><td class="tbd">TBD</td><td class="tbd">TBD</td><td class="tbd">TBD</td><td class="tbd">TBD</td></tr>
-        <tr><td></td><td>Week 4</td><td>Physics-informed neural networks</td><td class="tbd">TBD</td><td class="tbd">TBD</td><td class="tbd">TBD</td><td class="tbd">TBD</td><td class="tbd">TBD</td></tr>
-        <tr><td></td><td>Week 5</td><td>Reduced-order modeling</td><td class="tbd">TBD</td><td class="tbd">TBD</td><td class="tbd">TBD</td><td class="tbd">TBD</td><td class="tbd">TBD</td></tr>
-        <tr><td class="unit">II Learning all the way</td><td class="tbd">TBD</td><td>Graph neural networks, neural operators, and transformers</td><td class="tbd">TBD</td><td class="tbd">TBD</td><td class="tbd">TBD</td><td class="tbd">TBD</td><td class="tbd">TBD</td></tr>
-        <tr><td class="unit">III Generative AI</td><td class="tbd">TBD</td><td>Generative models and AI-driven scientific discovery</td><td class="tbd">TBD</td><td class="tbd">TBD</td><td class="tbd">TBD</td><td class="tbd">TBD</td><td class="tbd">TBD</td></tr>
+        <tr><td class="unit">I The fundamentals</td><td>Week 1 · Sep 10</td><td>Introduction and explanation of formats</td><td>—</td><td>—</td></tr>
+        <tr><td></td><td>Week 2 · Sep 17</td><td>Differentiable simulations</td><td>[Hu+ 2019] DiffTaichi: Differentiable Programming for Physical Simulation</td><td>[Macklin 2024] Warp: Differentiable Spatial Computing for Python</td></tr>
+        <tr><td></td><td>Week 3 · Sep 24</td><td>Project proposal: differentiable simulator for anything</td><td>—</td><td>—</td></tr>
+        <tr><td></td><td>Week 4 · Oct 1</td><td>Physics-informed neural network</td><td>[Raissi+ 2019] Physics-Informed Neural Networks: A Deep Learning Framework for Solving Forward and Inverse Problems Involving Nonlinear Partial Differential Equations</td><td>—</td></tr>
+        <tr><td></td><td>Week 5 · Oct 8</td><td>Reduced-order modeling</td><td>[Sharp+ 2023] Data-Free Learning of Reduced-Order Kinematics</td><td>Project check-in</td></tr>
+        <tr><td></td><td>Week 6 · Oct 15</td><td>Neural ODE</td><td>[Chen+ 2018] Neural Ordinary Differential Equations</td><td>Project check-in</td></tr>
+        <tr><td class="unit">II Learning all the way</td><td>Week 7 · Oct 22</td><td>Graph neural network</td><td>[Sanchez-Gonzalez+ 2020] Learning to Simulate Complex Physics with Graph Networks; [Allen 2022] Physical Design Using Differentiable Learned Simulators</td><td>—</td></tr>
+        <tr><td></td><td>Week 8 · Oct 29</td><td>Neural operators</td><td>[Li+ 2020] Fourier Neural Operator for Parametric Partial Differential Equations</td><td>Project check-in</td></tr>
+        <tr><td></td><td>Week 9 · Nov 5</td><td>Transformers</td><td>[Holzschuh+ 2025] PDE-Transformer: Efficient and Versatile Transformers for Physics Simulations</td><td>Project check-in</td></tr>
+        <tr><td class="unit">III Generative AI</td><td>Week 10 · Nov 12</td><td>Class meets as scheduled after UBC midterm break</td><td class="tbd">TBD</td><td class="tbd">TBD</td></tr>
+        <tr><td></td><td>Week 11 · Nov 19</td><td>Reconstruct physics</td><td>[Li+ 2023] PAC-NeRF: Physics Augmented Continuum Neural Radiance Fields for Geometry-Agnostic System Identification</td><td>Review all slide sections and ensure the code, README, and dependency list are complete and reproducible.</td></tr>
+        <tr><td></td><td>Week 12 · Nov 26</td><td>Project final presentations prep</td><td>—</td><td>Initial version of the slides and code due</td></tr>
+        <tr><td></td><td>Week 13 · Dec 3</td><td>Project final presentations</td><td>Final project presentations</td><td>Final project presentations</td></tr>
       </tbody>
     </table>
     <div class="tabs" aria-hidden="true"><span class="tab active">Schedule</span><span class="tab">Notes</span></div>

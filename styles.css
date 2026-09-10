@@ -221,6 +221,14 @@ a {
   color: #000;
 }
 
+.course-facts a.course-link {
+  color: var(--link);
+}
+
+.required {
+  color: #d50000;
+}
+
 .course-facts p,
 .course-units p,
 .syllabus-page p {
