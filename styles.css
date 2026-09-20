@@ -311,17 +311,27 @@ a {
   background: #fff;
 }
 
-.sheet-open {
-  position: absolute;
-  top: 4px;
-  right: 6px;
-  z-index: 2;
-  display: grid;
-  place-items: center;
-  color: #555;
+.sheet-link {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 6px 10px;
+  border-bottom: 1px solid #d0d0d0;
+  color: #202124;
+  font-size: 16px;
+  text-decoration: none;
 }
 
-.sheet-open svg {
+.sheet-link:hover,
+.sheet-link:focus-visible {
+  background: #f1f3f4;
+  color: #1155cc;
+}
+
+.sheet-link svg {
+  flex: 0 0 auto;
   width: 16px;
   height: 16px;
 }
